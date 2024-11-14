@@ -25,3 +25,75 @@ _Цель лабораторной работы_: изучение базовы�
 Для наглядной работы с репозиторием необходимо сделать изменения и зафиксировать их, оставляя комментарии. Поочередно в репозиторий были добавлены три текстовых файла: task1.txt, task2.txt, task3.txt, созданные командой _echo "text" >> name.txt_. Изменения фиксировались командой _git add_, для создания коммита - _git commit -m "text"_, для обновления информации в репозитории - _git push_ (_см. [рис. 11.1](https://github.com/ArsenValeev/LR6/blob/report/screen/png11_1.png); [рис. 11.2](https://github.com/ArsenValeev/LR6/blob/report/screen/png11_2.png); [рис. 11.3](https://github.com/ArsenValeev/LR6/blob/report/screen/png11_3.png)_).
 ## Пункт 12
 С помощью _git revert HEAD --no-edit_ был осуществлен откат коммита (_см. [рис. 12](https://github.com/ArsenValeev/LR6/blob/report/screen/png12.png)_).
+
+# Лог команд
+git config --global user.name "Arsen Valeev
+
+git config --global user.email "arsenvaleev123@gmail.com "
+
+mkdir lab6op
+
+cd / c/ lab6op 
+
+git clone https://github.com/dmit-p0/LR6
+
+git pull
+
+ls -1
+
+git reflog
+
+git log
+	
+git branch other_master
+git checkout other_master
+
+ls -1
+
+git checkout master
+
+ls -1
+
+git merge other_master
+
+ls -1
+
+git branch -d other_master
+
+echo "Первый файл" >> task1.txt
+
+git status
+
+git add task1.txt
+
+git status
+
+git commit -m "Первый commit"
+
+git push
+
+echo "Второй файл" >> task2.txt
+
+git status
+
+git add task2.txt
+
+git status
+
+git commit -m "Второй commit"
+
+git push
+
+echo "Третий файл" >> task3.txt
+
+git status
+
+git add task3.txt
+
+git status
+
+git commit -m "Третий commit"
+
+git push
+
+git revert HEAD --no-edit
