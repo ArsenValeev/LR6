@@ -102,12 +102,20 @@ git revert HEAD --no-edit
 С помощью команды _git log --pretty=format:"%h - %ad - %an: %s" --date=short_ была получена история операций в укороченном виде.
 
 bcface9 - 2024-11-14 - Arsen Valeev: Revert "Третий commit"
+
 64f9f22 - 2024-11-14 - Arsen Valeev: Третий commit
+
 d9bb47d - 2024-11-14 - Arsen Valeev: Второй commit
+
 271d37e - 2024-11-14 - Arsen Valeev: Первый commit
+
 1a3a11e - 2024-11-14 - Arsen Valeev: other
+
 b291c26 - 2024-11-14 - ArsenValeev: Create new_file
+
 921f53b - 2020-11-21 - Kurtyanik: Обновление информации
+
 c08a654 - 2020-11-21 - Kurtyanik: Файл создан пустым
+
 3c6e913 - 2020-11-21 - Kurtyanik: Initial commit
 
